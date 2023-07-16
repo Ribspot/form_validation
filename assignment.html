@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+		
+		 <link href="fontawesome/css/all.css" rel="stylesheet"/>
+</head>
+<body class="container-fluid " style="background-color: rgb(255, 255, 255);">
+	<div class="container-fluid ">
+<h1 align="center">User Registration Form</h1>
+	<h3 align="center">All Fields are Required</h3>
+	<form method="post" action="">
+		<p  id="hh"></p>
+		<label>Username</label>
+		<p id="tt"></p><input type="text" name="" placeholder="Enter Username"id="i" class="form-control">
+		<label>Password</label>
+	<p id="ww"></p><input type="password" name="" placeholder="password" id="u" class="form-control col-4">
+			<label>Confirm Password</label>
+		<p id="ff"></p><input type="password" name="" placeholder="password" class="form-control col-4">
+		
+				<button class="mt-3 btn btn-outline-primary" onClick="user('','')" type="button">Register</button>
+		
+
+
+
+	</form>
+
+
+
+</div>
+<script type="text/javascript">
+
+function user(password,usern){
+	 password = document.getElementById('u').value;
+   usern = document.getElementById('i').value;
+   if (password===''  || usern===''){
+  
+
+   	nn="<p class='alert alert-danger'>invalid input</p>"
+
+
+	   document.getElementById('tt').innerHTML=nn
+
+document.getElementById('ww').innerHTML=nn
+document.getElementById('ff').innerHTML=nn;
+
+   }else{
+	nn="<p class='alert alert-success'>successful</p>"
+	document.getElementById('hh').innerHTML=nn
+
+
+ 
+   }
+
+
+
+}
+
+</script>
+</body>
+</html>
